@@ -13,6 +13,7 @@ def set_marketParams():
     print("5) FOREX")
     print("---------------------------------------")
     userMarkets=str(input("Enter markets NAME(seperate with comma if more than one): ")).upper()
+    print("--------------------------------------------------------------------------")
     parameters={"apikey":apikey, "markets":userMarkets}
     return parameters
 

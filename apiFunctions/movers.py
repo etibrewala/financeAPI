@@ -12,6 +12,7 @@ def set_IndexUrl():
     print("3) S&P 500")
     print("----------------------------------------")
     userIndex=int(input("Enter the corresponding number(one argument only): "))
+    print("-----------------------------------------------------------------")
     if(userIndex==1):
         updateURL=moversURL.format(index="$COMPX")
     if(userIndex==2):
@@ -23,10 +24,12 @@ def set_IndexUrl():
 
 def set_direction():
     userDirection=str(input("Enter UP for largest positive movers or DOWN for largest negative movers: ")).lower()
+    print("--------------------------------------------------------------------------------------------")
     return userDirection
 
 def set_ChangeType():
     userChangeType=str(input("Enter the specific change format(VALUE or PERCENT): ")).lower()
+    print("-----------------------------------------------------------------------")
     return userChangeType
 
 def set_Parameters():

@@ -5,6 +5,7 @@ from accessData.url import fundDataURL
 
 def get_Symbol():
     userSymbol=str(input("Which company do you want fundamental data for(enter stock symbol)? ")).upper()
+    print("-----------------------------------------------------------------------------------")
 
     return userSymbol
 
@@ -22,6 +23,7 @@ def get_FundamentalData():
     fundamentalData=requests.get(fundDataURL,params=fundDataParams)
     
     userData=int(input("Enter 1 for SYMBOL DATA or 2 for FUNDAMENTAL DATA: "))
+    print("-----------------------------------------------------------------")
 
     if(userData==1): return symbolSearchData.json()
 
