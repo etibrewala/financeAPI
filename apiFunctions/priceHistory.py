@@ -5,20 +5,25 @@ from accessData.url import priceHistoryURL
 
 def set_symbol():
     userSymbol=str(input("What stock do you want price history for(enter the symbol)?: ")).upper()
+    print("----------------------------------------------------------------------------")
     return userSymbol
 
 def set_periodType(): 
     userPeriodType=str(input("What period would you like to see(DAY, MONTH, YEAR, YTD)? ")).lower()
+    print("-----------------------------------------------------------------------------")
 
     return userPeriodType
 
 def set_peirodLength(periodType):
     if(periodType=="day"):
         userPL=int(input("Enter the number of periods to show(1, 2, 3, 4, 5, or 10): "))
+        print("----------------------------------------------------------------------")
     if(periodType=="month"):
         userPL=int(input("Enter the number of periods to show(1,2,3,6): "))
+        print("---------------------------------------------------------")
     if(periodType=="year"):
         userPL=int(input("Enter the number of periods to show(1,2,3,5,10,15,20): "))
+        print("------------------------------------------------------------------")
     if(periodType=="ytd"):
         userPL=1
 
@@ -29,13 +34,16 @@ def set_frequencyType(periodType):
         userFT="minute"
     if(periodType=="month" or periodType=="ytd"):
         userFT=str(input("Enter the frequency type you want to see(DAILY or WEEKLY): ")).lower()
+        print("----------------------------------------------------------------------")
     if(periodType=="year"):
         userFT=str(input("Enter the frequency type you want to see(DAILY, WEEKLY or MONTHLY): ")).lower()
+        print("-------------------------------------------------------------------------------")
     return userFT
 
 def set_Frequency(userFrequencyType):
     if(userFrequencyType=="minute"):
         userFrequency=int(input("Enter the frequency intervals you want to see(1,5,10,15,30): "))
+        print("-------------------------------------------------------------------------------")
     else:
         userFrequency=1
 
@@ -43,6 +51,7 @@ def set_Frequency(userFrequencyType):
 
 def get_extendedHours():
     userHours=str(input("Do you want extended hours data(Y/N)? ")).lower()
+    print("----------------------------------------------------")
     if(userHours=="y"):
         return "true"
     if(userHours=="n"):
