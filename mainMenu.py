@@ -9,5 +9,6 @@ def showMenu():
     print("5) Get Fundamental Data")
     print("---------------------------")
     userEntry=int(input("Choose the corresponding number: "))
+    print("-----------------------------------")
     return userEntry
 
