@@ -3,6 +3,7 @@ from apiFunctions.marketHours import get_marketHours
 from apiFunctions.movers import get_Movers
 from apiFunctions.liveQuotes import get_quotesData
 from apiFunctions.priceHistory import get_priceHistory
+from apiFunctions.fundamentalData import get_FundamentalData
 
 userPull=showMenu()
 
@@ -17,3 +18,6 @@ if(userPull==3):
 
 if(userPull==4):
     print(get_quotesData())
+
+if(userPull==5):
+    print(get_FundamentalData())

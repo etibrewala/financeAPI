@@ -6,7 +6,7 @@ def showMenu():
     print("2) Get Movers")
     print("3) Get Price History")
     print("4) Get Live Quotes")
-    print("5) Get Fundamental Data")
+    print("5) Get Fundamental Data or Symbol Data")
     print("---------------------------")
     userEntry=int(input("Choose the corresponding number: "))
     print("-----------------------------------")
