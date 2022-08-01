@@ -1,1 +1,1 @@
-apikey='enter personal api key here'
+apikey='enter your api key here'
